@@ -8,6 +8,8 @@
 --macro keep('IntIterator')
 -cp C:/HaxeToolkit/haxe/lib/hscript/2,1,1
 -D hscript=2.1.1
+-cp C:/HaxeToolkit/haxe/lib/zerolib/git
+-D zerolib=0.0.0
 -cp source
 -cp C:\HaxeToolkit\haxe\lib\openfl/3,6,1/extern
 -D native-trace
@@ -17,11 +19,12 @@
 -D flash-use-stage
 -D no-compilation
 -D openfl-flash
+-D fdb
 -D web
 --macro flixel.system.macros.FlxDefines.run()
 -swf-lib export/flash/obj/assets.swf
 -swf-version 11.8
 -swf export/flash/bin/LD40.swf
--swf-header 640:480:60:000000
+-swf-header 512:448:60:000000
 -cp export/flash/haxe
 -D final

@@ -1,0 +1,141 @@
+<RecordedActions>
+  <RecordedAction paintIncremental="0" name="Path" compositeOp="normal" id="PathPaintAction" strokeStyle="Brush" opacity="1" fillStyle="None">
+    <PaintopPreset name="Basic_tip_default" paintopid="paintbrush">
+      <param type="string" name="AirbrushOption/isAirbrushing"><![CDATA[false]]></param>
+      <param type="string" name="AirbrushOption/rate"><![CDATA[100]]></param>
+      <param type="string" name="ColorOption/colorPerParticle"><![CDATA[false]]></param>
+      <param type="string" name="ColorOption/fillBackground"><![CDATA[false]]></param>
+      <param type="string" name="ColorOption/hue"><![CDATA[0]]></param>
+      <param type="string" name="ColorOption/mixBgColor"><![CDATA[false]]></param>
+      <param type="string" name="ColorOption/sampleInputColor"><![CDATA[false]]></param>
+      <param type="string" name="ColorOption/saturation"><![CDATA[0]]></param>
+      <param type="string" name="ColorOption/useRandomHSV"><![CDATA[false]]></param>
+      <param type="string" name="ColorOption/useRandomOpacity"><![CDATA[false]]></param>
+      <param type="string" name="ColorOption/value"><![CDATA[0]]></param>
+      <param type="string" name="ColorRateSensor"><![CDATA[<!DOCTYPE params> <params id="pressure"> <curve>0,0;1,1;</curve> </params> ]]></param>
+      <param type="string" name="ColorRateUseCurve"><![CDATA[true]]></param>
+      <param type="string" name="ColorRateValue"><![CDATA[0.28]]></param>
+      <param type="string" name="ColorSource/Type"><![CDATA[plain]]></param>
+      <param type="string" name="CompositeOp"><![CDATA[normal]]></param>
+      <param type="string" name="DarkenSensor"><![CDATA[<!DOCTYPE params> <params id="pressure"> <curve>0,0;1,1;</curve> </params> ]]></param>
+      <param type="string" name="DarkenUseCurve"><![CDATA[true]]></param>
+      <param type="string" name="DarkenUseSameCurve"><![CDATA[true]]></param>
+      <param type="string" name="DarkenValue"><![CDATA[1]]></param>
+      <param type="string" name="Experiment/displacement"><![CDATA[42]]></param>
+      <param type="string" name="Experiment/displacementEnabled"><![CDATA[false]]></param>
+      <param type="string" name="Experiment/smoothing"><![CDATA[false]]></param>
+      <param type="string" name="Experiment/speed"><![CDATA[42]]></param>
+      <param type="string" name="Experiment/speedEnabled"><![CDATA[false]]></param>
+      <param type="string" name="FlowSensor"><![CDATA[<!DOCTYPE params> <params id="pressure"/> ]]></param>
+      <param type="string" name="FlowUseCurve"><![CDATA[false]]></param>
+      <param type="string" name="FlowUseSameCurve"><![CDATA[true]]></param>
+      <param type="string" name="FlowValue"><![CDATA[1]]></param>
+      <param type="string" name="GradientSensor"><![CDATA[<!DOCTYPE params> <params id="pressure"> <curve>0,0;1,1;</curve> </params> ]]></param>
+      <param type="string" name="GradientUseCurve"><![CDATA[true]]></param>
+      <param type="string" name="GradientValue"><![CDATA[1]]></param>
+      <param type="string" name="HorizontalMirrorEnabled"><![CDATA[false]]></param>
+      <param type="string" name="KisPrecisionOption/AutoPrecisionEnabled"><![CDATA[false]]></param>
+      <param type="string" name="KisPrecisionOption/DeltaValue"><![CDATA[15]]></param>
+      <param type="string" name="KisPrecisionOption/SizeToStartFrom"><![CDATA[0]]></param>
+      <param type="string" name="KisPrecisionOption/precisionLevel"><![CDATA[5]]></param>
+      <param type="string" name="KisPresisionOption/precisionLevel"><![CDATA[5]]></param>
+      <param type="string" name="Krita/compositeop"><![CDATA[normal]]></param>
+      <param type="string" name="Krita/erase"><![CDATA[false]]></param>
+      <param type="string" name="Krita/mirrorhorizontal"><![CDATA[false]]></param>
+      <param type="string" name="Krita/mirrorvertical"><![CDATA[false]]></param>
+      <param type="string" name="Krita/opacity"><![CDATA[100]]></param>
+      <param type="string" name="MergedPaint"><![CDATA[false]]></param>
+      <param type="string" name="MirrorSensor"><![CDATA[<!DOCTYPE params> <params id="pressure"/> ]]></param>
+      <param type="string" name="MirrorUseCurve"><![CDATA[true]]></param>
+      <param type="string" name="MirrorUseSameCurve"><![CDATA[true]]></param>
+      <param type="string" name="MirrorValue"><![CDATA[1]]></param>
+      <param type="string" name="MixSensor"><![CDATA[<!DOCTYPE params> <params id="pressure"> <curve>0,0;1,1;</curve> </params> ]]></param>
+      <param type="string" name="MixUseCurve"><![CDATA[true]]></param>
+      <param type="string" name="MixUseSameCurve"><![CDATA[true]]></param>
+      <param type="string" name="MixValue"><![CDATA[1]]></param>
+      <param type="string" name="OpacitySensor"><![CDATA[<!DOCTYPE params> <params id="pressure"> <curve>0,0;0.206422,0.248996;0.715596,0.7751;1,1;</curve> </params> ]]></param>
+      <param type="string" name="OpacityUseCurve"><![CDATA[true]]></param>
+      <param type="string" name="OpacityUseSameCurve"><![CDATA[true]]></param>
+      <param type="internal" name="OpacityValue">1</param>
+      <param type="string" name="OpacityVersion"><![CDATA[2]]></param>
+      <param type="string" name="PaintOpAction"><![CDATA[2]]></param>
+      <param type="string" name="PressureColorRate"><![CDATA[true]]></param>
+      <param type="string" name="PressureDarken"><![CDATA[false]]></param>
+      <param type="string" name="PressureGradient"><![CDATA[false]]></param>
+      <param type="string" name="PressureMirror"><![CDATA[false]]></param>
+      <param type="string" name="PressureMix"><![CDATA[false]]></param>
+      <param type="string" name="PressureOpacity"><![CDATA[true]]></param>
+      <param type="string" name="PressureRotation"><![CDATA[false]]></param>
+      <param type="string" name="PressureScatter"><![CDATA[false]]></param>
+      <param type="string" name="PressureSharpness"><![CDATA[false]]></param>
+      <param type="string" name="PressureSize"><![CDATA[true]]></param>
+      <param type="string" name="PressureSmudgeRate"><![CDATA[true]]></param>
+      <param type="string" name="PressureSoftness"><![CDATA[false]]></param>
+      <param type="string" name="PressureSpacing"><![CDATA[false]]></param>
+      <param type="string" name="PressureTexture/Strength/"><![CDATA[false]]></param>
+      <param type="string" name="Pressureh"><![CDATA[false]]></param>
+      <param type="string" name="Pressures"><![CDATA[false]]></param>
+      <param type="string" name="Pressurev"><![CDATA[false]]></param>
+      <param type="string" name="RotationSensor"><![CDATA[<!DOCTYPE params> <params id="pressure"> <curve>0,0;1,1;</curve> </params> ]]></param>
+      <param type="string" name="RotationUseCurve"><![CDATA[true]]></param>
+      <param type="string" name="RotationUseSameCurve"><![CDATA[true]]></param>
+      <param type="string" name="RotationValue"><![CDATA[1]]></param>
+      <param type="string" name="ScatterSensor"><![CDATA[<!DOCTYPE params> <params id="pressure"/> ]]></param>
+      <param type="string" name="ScatterUseCurve"><![CDATA[true]]></param>
+      <param type="string" name="ScatterUseSameCurve"><![CDATA[true]]></param>
+      <param type="string" name="ScatterValue"><![CDATA[5]]></param>
+      <param type="string" name="Scattering/AxisX"><![CDATA[true]]></param>
+      <param type="string" name="Scattering/AxisY"><![CDATA[true]]></param>
+      <param type="string" name="Sharpness/threshold"><![CDATA[4]]></param>
+      <param type="string" name="SharpnessSensor"><![CDATA[<!DOCTYPE params> <params id="pressure"/> ]]></param>
+      <param type="string" name="SharpnessUseCurve"><![CDATA[true]]></param>
+      <param type="string" name="SharpnessUseSameCurve"><![CDATA[true]]></param>
+      <param type="string" name="SharpnessValue"><![CDATA[1]]></param>
+      <param type="string" name="SizeSensor"><![CDATA[<!DOCTYPE params> <params id="pressure"> <curve>0,0.389558;0.305221,0.658635;1,1;</curve> </params> ]]></param>
+      <param type="string" name="SizeUseCurve"><![CDATA[true]]></param>
+      <param type="string" name="SizeUseSameCurve"><![CDATA[true]]></param>
+      <param type="string" name="SizeValue"><![CDATA[1]]></param>
+      <param type="string" name="SmudgeRateSensor"><![CDATA[<!DOCTYPE params> <params id="pressure"> <curve>0,0;0.313253,0.588542;1,1;</curve> </params> ]]></param>
+      <param type="string" name="SmudgeRateUseCurve"><![CDATA[true]]></param>
+      <param type="string" name="SmudgeRateValue"><![CDATA[0.56]]></param>
+      <param type="string" name="SoftnessSensor"><![CDATA[<!DOCTYPE params> <params id="pressure"/> ]]></param>
+      <param type="string" name="SoftnessUseCurve"><![CDATA[true]]></param>
+      <param type="string" name="SoftnessUseSameCurve"><![CDATA[true]]></param>
+      <param type="string" name="SoftnessValue"><![CDATA[1]]></param>
+      <param type="string" name="Spacing/Isotropic"><![CDATA[false]]></param>
+      <param type="string" name="SpacingSensor"><![CDATA[<!DOCTYPE params> <params id="pressure"/> ]]></param>
+      <param type="string" name="SpacingUseCurve"><![CDATA[true]]></param>
+      <param type="string" name="SpacingUseSameCurve"><![CDATA[true]]></param>
+      <param type="string" name="SpacingValue"><![CDATA[1]]></param>
+      <param type="string" name="Texture/Pattern/Enabled"><![CDATA[false]]></param>
+      <param type="string" name="VerticalMirrorEnabled"><![CDATA[false]]></param>
+      <param type="string" name="brush_definition"><![CDATA[<Brush type="auto_brush" useAutoSpacing="1" randomness="0" density="1" autoSpacingCoeff="0.8" BrushVersion="2" spacing="0.1" angle="0"> <MaskGenerator ratio="1" type="circle" vfade="0.9" id="default" spikes="2" antialiasEdges="1" hfade="0.9" diameter="30"/> </Brush> ]]></param>
+      <param type="string" name="hSensor"><![CDATA[<!DOCTYPE params> <params id="pressure"/> ]]></param>
+      <param type="string" name="hUseCurve"><![CDATA[true]]></param>
+      <param type="string" name="hUseSameCurve"><![CDATA[true]]></param>
+      <param type="string" name="hValue"><![CDATA[1]]></param>
+      <param type="string" name="paintop"><![CDATA[paintbrush]]></param>
+      <param type="string" name="requiredBrushFile"><![CDATA[]]></param>
+      <param type="internal" name="runtimeCanvasMirroredX">false</param>
+      <param type="internal" name="runtimeCanvasMirroredY">false</param>
+      <param type="internal" name="runtimeCanvasRotation">0</param>
+      <param type="string" name="sSensor"><![CDATA[<!DOCTYPE params> <params id="pressure"/> ]]></param>
+      <param type="string" name="sUseCurve"><![CDATA[true]]></param>
+      <param type="string" name="sUseSameCurve"><![CDATA[true]]></param>
+      <param type="string" name="sValue"><![CDATA[1]]></param>
+      <param type="string" name="vSensor"><![CDATA[<!DOCTYPE params> <params id="pressure"/> ]]></param>
+      <param type="string" name="vUseCurve"><![CDATA[true]]></param>
+      <param type="string" name="vUseSameCurve"><![CDATA[true]]></param>
+      <param type="string" name="vValue"><![CDATA[1]]></param>
+    </PaintopPreset>
+    <ForegroundColor>
+      <RGB r="0" b="0" space="sRGB-elle-V2-srgbtrc.icc" g="0"/>
+    </ForegroundColor>
+    <BackgroundColor>
+      <RGB r="1" b="1" space="sRGB-elle-V2-srgbtrc.icc" g="1"/>
+    </BackgroundColor>
+    <Slices>
+      <Point yTilt="0" speed="113.811857573277" rotation="0" perspective="1" xTilt="0" pointX="24.624999827498" pointY="-13.6249999045547" pressure="1" tangentialPressure="0" time="0"/>
+    </Slices>
+  </RecordedAction>
+</RecordedActions>
