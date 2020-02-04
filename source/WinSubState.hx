@@ -1,4 +1,5 @@
-import zerolib.ZBitmapText;
+//import zerolib.ZBitmapText;
+import zero.flixel.ui.BitmapText;
 import flixel.FlxSprite;
 import flixel.util.FlxSpriteUtil;
 import flixel.FlxSubState;
@@ -11,7 +12,7 @@ class WinSubState extends FlxSubState
 {
 
     var type_timer:Int = 5;
-    var text:ZBitmapText;
+    var text:BitmapText;
     var t1:String = '';
     var t2:String = 'hey snake...\ndo you think eggs can hatch...\neven on a battlefield?';
     var can_type:Bool = true;
@@ -20,13 +21,25 @@ class WinSubState extends FlxSubState
     {
         super(0xff000000);
 
-        text = new ZBitmapText(16, 100, ' ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.:/%?!,"-_+=()@', FlxPoint.get(7, 7), 'assets/images/alphabet.png', null, Std.int(FlxG.width - 32));
+        text = new BitmapText({
+            position: FlxPoint.get(16, 100), 
+            charset: ' ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.:/%?!,"-_+=()@', 
+            letter_size: FlxPoint.get(7, 7), 
+            graphic: 'assets/images/alphabet.png', 
+            width: Std.int(FlxG.width - 32)
+        });
         add(text);
 
         new FlxTimer().start(10).onComplete = function(t:FlxTimer){
             FlxTween.tween(text, {alpha:0}, 2);
             
-            var t = new ZBitmapText(16, 200, ' ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.:/%?!,"-_+=()@', FlxPoint.get(7, 7), 'assets/images/alphabet.png', null, Std.int(FlxG.width - 32));
+            var t = new BitmapText({
+                position: FlxPoint.get(16, 200), 
+                charset: ' ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.:/%?!,"-_+=()@',
+                letter_size: FlxPoint.get(7, 7), 
+                graphic: 'assets/images/alphabet.png',
+                width: Std.int(FlxG.width - 32)
+            });
             t.text = 'THANKS FOR PLAYING!\n@X01010111 2017';
             t.color = 0xffff004d;
             t.alpha = 0;

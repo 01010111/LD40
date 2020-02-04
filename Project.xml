@@ -34,7 +34,7 @@
 	<!-- _______________________________ Libraries ______________________________ -->
 
 	<haxelib name="flixel" />
-	<haxelib name="zerolib" />
+	<haxelib name="zerolib-flixel" />
 
 	<!--In case you want to use the addons package-->
 	<!--<haxelib name="flixel-addons" />-->

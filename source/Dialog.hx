@@ -1,4 +1,5 @@
-import zerolib.ZBitmapText;
+//import zerolib.BitmapText;
+import zero.flixel.ui.BitmapText;
 import flixel.FlxSprite;
 import flixel.util.FlxSpriteUtil;
 import flixel.FlxSubState;
@@ -10,7 +11,7 @@ class Dialog extends FlxSubState
 {
 
     var bg:FlxSprite;
-    var text:ZBitmapText;
+    var text:BitmapText;
     var t1:String = '';
     var t2:String;
     var can_type:Bool = false;
@@ -33,7 +34,13 @@ class Dialog extends FlxSubState
             can_type = true;
         }
 
-        text = new ZBitmapText(bg.x + 16, bg.y + 16, ' ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.:/%?!,"-_+=()@', FlxPoint.get(7, 7), 'assets/images/alphabet.png', null, Std.int(bg.width - 32), Std.int(bg.height - 32));
+        text = new BitmapText({
+            position: FlxPoint.get(bg.x + 16, bg.y + 16), 
+            charset: ' ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.:/%?!,"-_+=()@',
+            letter_size: FlxPoint.get(7, 7), 
+            graphic: 'assets/images/alphabet.png', 
+            width: Std.int(bg.width - 32)
+        });
         add(text);
 
         t2 = _text.toUpperCase();

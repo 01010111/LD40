@@ -10,7 +10,7 @@ import flixel.tile.FlxBaseTilemap.FlxTilemapAutoTiling;
 import flixel.math.FlxMath;
 import flixel.util.FlxSort;
 import openfl.Assets;
-import zerolib.ZMath;
+//import zerolib.ZMath;
 
 class PlayState extends FlxState
 {
@@ -219,7 +219,7 @@ class PlayState extends FlxState
 			s.alpha = Math.random() * 0.5 + 0.5;
 			var sc = Math.random() * 0.15 + 0.1;
 			s.scale.set(sc, sc);
-			splat_layer.stamp(s, Std.int(p.x - s.width * 0.5) + ZMath.randomRangeInt(-8, 8), Std.int(p.y - s.height * 0.5) + ZMath.randomRangeInt(-8, 8));
+			splat_layer.stamp(s, Std.int(p.x - s.width * 0.5) + 8.get_random(-8).int(), Std.int(p.y - s.height * 0.5) + 8.get_random(-8).int());
 		}
 	}
 }

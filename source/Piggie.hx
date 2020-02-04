@@ -1,7 +1,7 @@
 import flixel.FlxObject;
 import flixel.math.FlxPoint;
 import flixel.util.FlxPath;
-import zerolib.ZMath;
+//import zerolib.ZMath;
 
 class Piggie extends GameSprite
 {
@@ -62,8 +62,8 @@ class Piggie extends GameSprite
         {
             for (i in 0...PlayState.i.patrol_nodes.length)
             {
-                var d1 = ZMath.distance(getMidpoint(), PlayState.i.patrol_nodes[last_target]);
-                var d2 = ZMath.distance(getMidpoint(), PlayState.i.patrol_nodes[i]);
+                var d1 = getMidpoint().distanceTo(PlayState.i.patrol_nodes[last_target]); //ZMath.distance(getMidpoint(), PlayState.i.patrol_nodes[last_target]);
+                var d2 = getMidpoint().distanceTo(PlayState.i.patrol_nodes[i]); //ZMath.distance(getMidpoint(), PlayState.i.patrol_nodes[i]);
                 if (d2 < d1) last_target = i;
             }
             last_target--;
@@ -164,8 +164,8 @@ class Piggie extends GameSprite
                         trace('' + i + ' occupied!');
                         continue;
                     }
-                    var d1 = n < 0 ? 999 : ZMath.distance(getMidpoint(), PlayState.i.patrol_nodes[n]);
-                    var d2 = ZMath.distance(getMidpoint(), PlayState.i.patrol_nodes[i]);
+                    var d1 = n < 0 ? 999 : getMidpoint().distanceTo(PlayState.i.patrol_nodes[n]); //ZMath.distanceTo(getMidpoint(), PlayState.i.patrol_nodes[n]);
+                    var d2 = getMidpoint().distanceTo(PlayState.i.patrol_nodes[i]);
                     if (d2 < d1) n = i;
                 }
                 trace(n);
@@ -196,7 +196,7 @@ class Piggie extends GameSprite
     function hunt()
     {
         if (prev_state != state) hunt_start();
-        var a = ZMath.velocityFromAngle(ZMath.angleBetween(getMidpoint(), PlayState.i.chicken.getMidpoint()), 800);
+        var a = getMidpoint().angleBetween(PlayState.i.chicken.getMidpoint()).vector_from_angle(800); //ZMath.velocityFromAngle(ZMath.angleBetween(getMidpoint(), PlayState.i.chicken.getMidpoint()), 800);
         acceleration.set(a.x, a.y);
         if (hunt_timer == 0)
         {
@@ -235,8 +235,8 @@ class Piggie extends GameSprite
     {
         if (PlayState.i.map.ray(getMidpoint(), PlayState.i.chicken.getMidpoint()))
         {
-            var chicken_angle = ZMath.toRelativeAngle(ZMath.angleBetween(getMidpoint(), PlayState.i.chicken.getMidpoint()));
-            var velocity_angle = ZMath.angleFromVelocity(recent_velocity.x, recent_velocity.y);
+            var chicken_angle = getMidpoint().angleBetween(PlayState.i.chicken.getMidpoint()).get_relative_degree(); //ZMath.toRelativeAngle(ZMath.angleBetween(getMidpoint(), PlayState.i.chicken.getMidpoint()));
+            var velocity_angle = recent_velocity.vector_angle(); //ZMath.angleFromVelocity(recent_velocity.x, recent_velocity.y);
             if (Math.abs(chicken_angle - velocity_angle) > 180)
             {
                 if (chicken_angle < velocity_angle) chicken_angle += 360;
@@ -244,7 +244,7 @@ class Piggie extends GameSprite
             }
             var diff = state == STATE_IDLE ? 90 : 60;
 
-            if (Math.abs(chicken_angle - velocity_angle) < diff && ZMath.distance(getMidpoint(), PlayState.i.chicken.getMidpoint()) < 100)
+            if (Math.abs(chicken_angle - velocity_angle) < diff && getMidpoint().distance(PlayState.i.chicken.getMidpoint()) < 100 )//ZMath.distance(getMidpoint(), PlayState.i.chicken.getMidpoint()) < 100)
             {
                 next_state = STATE_HUNT;
                 if (state != STATE_HUNT) state = STATE_STUNNED;
@@ -259,7 +259,8 @@ class Piggie extends GameSprite
 
     override public function alert()
     {
-        if (ZMath.distance(getMidpoint(), PlayState.i.chicken.getMidpoint()) > 120 || state == STATE_HUNT || state == STATE_STUNNED) return;
+        var d = getMidpoint().distance(PlayState.i.chicken.getMidpoint());
+        if (d > 120 || state == STATE_HUNT || state == STATE_STUNNED) return;
         next_state = STATE_PATROL;
         state = STATE_STUNNED;
         target.occupied = false;

@@ -3,7 +3,8 @@ import flixel.math.FlxPoint;
 import flixel.tweens.FlxTween;
 import flixel.tweens.FlxEase;
 import flixel.util.FlxTimer;
-import zerolib.ZMath;
+//import zerolib.ZMath;
+using zero.extensions.Tools;
 
 class Egg extends GameSprite
 {
@@ -41,7 +42,7 @@ class Egg extends GameSprite
             if (FlxG.keys.pressed.ANY)
             {
                 break_timer--;
-                offset.set(offset_holder.x + ZMath.randomRange(-1, 1), offset_holder.y + ZMath.randomRange(-1, 1));
+                offset.set(offset_holder.x + 1.get_random(-1), offset_holder.y + 1.get_random(-1));
                 if (break_timer == 0)
                 {
                     var p = getMidpoint();
