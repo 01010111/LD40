@@ -98,7 +98,7 @@ class PlayState extends FlxState
 		switch(PlayState.l)
 		{
 			case 1: openSubState(new Dialog('hi there! welcome to the world! don"t get turned into a little chicken nugget!'));
-			case 3: openSubState(new Dialog('you"re growing so fast! must be all the horomones :) \nnow you can run by pressing the x key!'));
+			case 3: openSubState(new Dialog('you"re growing so fast! must be all the hormones :) \nnow you can run by pressing the x key!'));
 			case 6: openSubState(new Dialog('now you can lay eggs by holding down the c key! your clucks will alert nearby piggies!'));
 		}
 	}

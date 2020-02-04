@@ -1,0 +1,10 @@
+- [ ] Fix Pig LOS
+- [ ] Remove any external links, visible .com web address or analytics tracking
+- [ ] Add our splash screen to the start of the game
+- [ ] Add our API integrations (see attached for more details)
+- [ ] Add a site lock (see instructions for the sites to lock it to)
+- [ ] Make sure the game fits within our iFrame which is a maximum of 800px wide and 600 px tall. - [ ] Remove any full screen buttons or functionality
+- [ ] Sprinting: It’s a bit too easy to sprint through the levels and win—please make the pigs react more quickly, or add a stamina bar for the sprint.
+- [ ] Progress saving when you close the browser tab/window
+- [x] Wrong spelling: the word “hormones” was spelled as “horomones”—please change to “hormones”
+- [ ] Adult-themed Content: remove knife from pig sprite
