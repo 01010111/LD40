@@ -8,7 +8,7 @@
 - [ ] Sprinting: It’s a bit too easy to sprint through the levels and win—please make the pigs react more quickly, or add a stamina bar for the sprint.
 - [x] Progress saving when you close the browser tab/window
 - [x] Wrong spelling: the word “hormones” was spelled as “horomones”—please change to “hormones”
-- [ ] Adult-themed Content: remove knife from pig sprite
+- [x] Adult-themed Content: remove knife from pig sprite
 - [x] Please email me if you did not receive our splash screen.
 - [x] Please do NOT make our splash screen clickable.
 - [x] Please set the page title of your index.html to “Game Name - Play it now at CoolmathGames.com”
@@ -18,7 +18,7 @@
 - [x] If your game has a high score leaderboard where users enter their name/initials, please remove it.
 - [x] Please have no stat counters or analytics in the game.
 - [x] Also, please remove any external links, email addresses, website addresses, or twitter handles from the credits page (or any other page), if there are any.
-- [ ] Safari has added (and we expect Chrome will as well) a new option, enabled by default, that blocks audio from autoplaying elements on the page.
+- [x] Safari has added (and we expect Chrome will as well) a new option, enabled by default, that blocks audio from autoplaying elements on the page.
 - [ ] Remove local host from sitelock
 
 ## Notes
