@@ -69,6 +69,7 @@ class Title extends FlxState
 
 	function start_game()
 	{
+		CMGAPI.event(START);
 		FlxG.sound.playMusic('assets/music/level.mp3', 1, true);
 		FlxG.switchState(new PlayState());
 	}

@@ -40,7 +40,7 @@ class WinSubState extends FlxSubState
                 graphic: 'assets/images/alphabet.png',
                 width: Std.int(FlxG.width - 32)
             });
-            t.text = 'THANKS FOR PLAYING!\n@X01010111 2017';
+            t.text = 'THANKS FOR PLAYING!';
             t.color = 0xffff004d;
             t.alpha = 0;
             add(t);

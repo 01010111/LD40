@@ -1,5 +1,6 @@
 package;
 
+import flixel.util.FlxSave;
 import flixel.FlxG;
 import flixel.FlxState;
 import flixel.FlxSprite;
@@ -11,6 +12,8 @@ import flixel.math.FlxMath;
 import flixel.util.FlxSort;
 import openfl.Assets;
 //import zerolib.ZMath;
+
+using Math;
 
 class PlayState extends FlxState
 {
@@ -29,10 +32,28 @@ class PlayState extends FlxState
 
 	public function new()
 	{
+		load();
+		save();
+		CMGAPI.event(START, l + 1);
 		i = this;
 		level_data = get_level_data();
-
 		super();
+	}
+
+	function load() {
+		var save = new FlxSave();
+		save.bind('escape_hatch_cmg');
+		if (save.data.level == null) return;
+		var nl = save.data.level;
+		if (l > nl && nl >= 0) return;
+		l = nl.max(0).int(); 
+	} 
+
+	function save() {
+		var save = new FlxSave();
+		save.bind('escape_hatch_cmg');
+		save.data.level = l;
+		save.flush();
 	}
 
 	function get_level_data():Array<Array<Int>>
@@ -195,6 +216,8 @@ class PlayState extends FlxState
 		if (PlayState.l == 8) 
 		{
 			openSubState(new WinSubState());
+			l = -1;
+			save();
 			return;
 		}
 		complete_callback();
