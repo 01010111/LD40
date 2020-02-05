@@ -85,7 +85,7 @@ class PlayState extends FlxState
 		super.create();
 
 		map = new FlxTilemap();
-		map.loadMapFrom2DArray(get_level_array(level_data), 'assets/images/tiles.png', 16, 16, FlxTilemapAutoTiling.AUTO);
+		map.loadMapFrom2DArray(get_level_array(level_data), 'assets/images/new_tiles.png', 16, 16, FlxTilemapAutoTiling.ALT);
 		map.follow();
 
 		objects = new FlxTypedGroup();

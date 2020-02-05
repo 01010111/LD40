@@ -19,6 +19,7 @@
 - [x] Please have no stat counters or analytics in the game.
 - [x] Also, please remove any external links, email addresses, website addresses, or twitter handles from the credits page (or any other page), if there are any.
 - [x] Safari has added (and we expect Chrome will as well) a new option, enabled by default, that blocks audio from autoplaying elements on the page.
+- [x] Update Tileset
 - [ ] Remove local host from sitelock
 
 ## Notes
