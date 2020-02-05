@@ -9,6 +9,7 @@ class ClickPage extends FlxState {
 
 	override function create() {
 		super.create();
+		FlxG.mouse.visible = true;
 		var s = new FlxSprite(0, 0);
 		s.loadGraphic('assets/images/chicken.png', true, 16, 16);
 		s.animation.add('play', [0, 1], 8);

@@ -22,6 +22,8 @@ class Title extends FlxState
 	{
 		FlxG.sound.play('assets/sounds/title.mp3');
 
+		FlxG.mouse.visible = false;
+
 		under_layer = new FlxGroup();
 		add(under_layer);
 
