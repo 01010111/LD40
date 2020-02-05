@@ -1,4 +1,4 @@
-- [ ] Fix Pig LOS
+- [x] Fix Pig LOS
 - [x] Remove any external links, visible .com web address or analytics tracking
 - [x] Add our splash screen to the start of the game
 - [x] Add our API integrations (see attached for more details)
