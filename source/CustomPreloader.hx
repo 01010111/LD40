@@ -15,7 +15,7 @@ class CustomPreloader extends flixel.system.FlxBasePreloader {
 			'edit-stage.coolmath-games.com',
 			'dev.coolmath-games.com',
 			'm.coolmath-games.com',
-			'http://127.0.0.1/'
+			#if debug 'http://127.0.0.1/' #end
 		];
 	}
 }

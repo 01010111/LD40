@@ -69,9 +69,9 @@ class Blip extends FlxSprite
 
     public function new(_op:FlxPoint, _parent:GameSprite)
     {
+        super(-2, -2);
+        
         parent = _parent;
-        super(origin_point.x + parent.x / 8, origin_point.y + parent.y / 8);
-
         origin_point = _op;
 
         var c = parent.type == 'chicken' ? 0xfffff1e8 : 0xffff004d;

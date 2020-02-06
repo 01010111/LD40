@@ -51,15 +51,16 @@ class Chicken extends GameSprite
 
         if (laying || stun_timer > 0) return;
 
-        var speed = FlxG.keys.pressed.X && Chicken.age > 1 ? FlxPoint.get(120, 120) : FlxPoint.get(60, 60);
+        var speed = FlxG.keys.pressed.X && Chicken.age > 1 && StaminaBar.i.has_stamina() ? FlxPoint.get(120, 120) : FlxPoint.get(60, 60);
         var delta = FlxPoint.get();
-
+        
         if (FlxG.keys.pressed.UP)       delta.y -= 1;
         if (FlxG.keys.pressed.DOWN)     delta.y += 1;
         if (FlxG.keys.pressed.LEFT)     delta.x -= 1;
         if (FlxG.keys.pressed.RIGHT)    delta.x += 1;
-
+        
         velocity.set(delta.x * speed.x, delta.y * speed.y);
+        if (FlxG.keys.pressed.X && delta.vector_length() > 0) StaminaBar.i.use_stamina();
     }
 
     function lay_check()

@@ -5,7 +5,7 @@
 - [x] Add a site lock (see instructions for the sites to lock it to)
 - [x] Make sure the game fits within our iFrame which is a maximum of 800px wide and 600 px tall. 
 - [x] Remove any full screen buttons or functionality
-- [ ] Sprinting: It’s a bit too easy to sprint through the levels and win—please make the pigs react more quickly, or add a stamina bar for the sprint.
+- [x] Sprinting: It’s a bit too easy to sprint through the levels and win—please make the pigs react more quickly, or add a stamina bar for the sprint.
 - [x] Progress saving when you close the browser tab/window
 - [x] Wrong spelling: the word “hormones” was spelled as “horomones”—please change to “hormones”
 - [x] Adult-themed Content: remove knife from pig sprite
@@ -20,7 +20,9 @@
 - [x] Also, please remove any external links, email addresses, website addresses, or twitter handles from the credits page (or any other page), if there are any.
 - [x] Safari has added (and we expect Chrome will as well) a new option, enabled by default, that blocks audio from autoplaying elements on the page.
 - [x] Update Tileset
-- [ ] Remove local host from sitelock
+- [x] Remove local host from sitelock
+- [ ] Pictogram directions
+- [ ] Final build
 
 ## Notes
 

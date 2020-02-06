@@ -16,12 +16,12 @@ class IntroSubState extends FlxSubState
         {
             for (y in 0...7)
             {
-                var s = new FlxSprite(x * 32, y * 32);
-                s.makeGraphic(32, 32, 0xff000000);
+                var s = new FlxSprite(x * 32, y * 36);
+                s.makeGraphic(32, 36, 0xff000000);
                 add(s);
 
-                FlxTween.tween(s.scale, { y:0 }, (x + y) * 0.05, { ease:FlxEase.quadIn });
-                FlxTween.tween(s, { angle:90 }, (x + y) * 0.05, { ease:FlxEase.quadIn });
+                FlxTween.tween(s.scale, { y:0 }, 0.2, { startDelay: (x + y) * 0.05, ease:FlxEase.quadIn });
+                FlxTween.tween(s, { angle:90 }, 0.2, { startDelay: (x + y) * 0.05, ease:FlxEase.quadIn });
             }
         }
 
