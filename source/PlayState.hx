@@ -117,11 +117,15 @@ class PlayState extends FlxState {
 
 	public function loaded_callback() {
 		switch (PlayState.l) {
+			case 0:
+				add(new FlxSprite(24, 24, AssetPaths.arrow_keys__png));
 			case 1:
 				openSubState(new Dialog('hi there! welcome to the world! don"t get turned into a little chicken nugget!'));
 			case 3:
+				add(new FlxSprite(16, 16, AssetPaths.x_key__png));
 				openSubState(new Dialog('you"re growing so fast! must be all the hormones :) \nnow you can run by pressing the x key!'));
 			case 6:
+				add(new FlxSprite(FlxG.width - 64, map.height - 64, AssetPaths.c_key__png));
 				openSubState(new Dialog('now you can lay eggs by holding down the c key! your clucks will alert nearby piggies!'));
 		}
 	}

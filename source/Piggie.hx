@@ -4,6 +4,8 @@ import flixel.math.FlxPoint;
 import flixel.util.FlxPath;
 //import zerolib.ZMath;
 
+using Math;
+
 class Piggie extends GameSprite
 {
 
@@ -197,7 +199,11 @@ class Piggie extends GameSprite
 	function hunt()
 	{
 		if (prev_state != state) hunt_start();
-		var a = getMidpoint().get_angle_between(PlayState.i.chicken.getMidpoint()).vector_from_angle(800); //ZMath.velocityFromAngle(ZMath.angleBetween(getMidpoint(), PlayState.i.chicken.getMidpoint()), 800);
+		var mp:Vec2 = [x + width/2, y + height/2];
+		var cmp:Vec2 = [PlayState.i.chicken.getMidpoint().x, PlayState.i.chicken.getMidpoint().y];
+		var a = (cmp - mp);
+		a.length = mp.distance(cmp).map(0, 100, 2400, 500).max(400);
+		//var a = getMidpoint().get_angle_between(PlayState.i.chicken.getMidpoint()).vector_from_angle(800); //ZMath.velocityFromAngle(ZMath.angleBetween(getMidpoint(), PlayState.i.chicken.getMidpoint()), 800);
 		acceleration.set(a.x, a.y);
 		if (hunt_timer == 0)
 		{
@@ -206,6 +212,9 @@ class Piggie extends GameSprite
 			state = STATE_IDLE;
 		}
 		else hunt_timer--;
+		mp.put();
+		cmp.put();
+		a.put();
 	}
 
 	function hunt_start()

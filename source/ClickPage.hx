@@ -1,3 +1,4 @@
+import flixel.util.FlxSave;
 import flixel.math.FlxPoint;
 import flixel.text.FlxText.FlxTextAlign;
 import zero.flixel.ui.BitmapText;
@@ -29,8 +30,17 @@ class ClickPage extends FlxState {
 
 	override function update(elapsed:Float) {
 		super.update(elapsed);
+		#if debug if (FlxG.keys.justPressed.R) reset(); #end
 		if (!FlxG.mouse.justPressed) return;
 		FlxG.switchState(new Title());
+	}
+
+	function reset() {
+		var save = new FlxSave();
+		save.bind('escape_hatch_cmg');
+		save.data.level = -1;
+		save.flush();
+		trace('reset');
 	}
 
 }

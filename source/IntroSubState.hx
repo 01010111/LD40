@@ -18,6 +18,7 @@ class IntroSubState extends FlxSubState
             {
                 var s = new FlxSprite(x * 32, y * 36);
                 s.makeGraphic(32, 36, 0xff000000);
+                s.scrollFactor.set();
                 add(s);
 
                 FlxTween.tween(s.scale, { y:0 }, 0.2, { startDelay: (x + y) * 0.05, ease:FlxEase.quadIn });
